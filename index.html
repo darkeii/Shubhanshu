@@ -1,95 +1,22 @@
-
-
-                                                                      <!-- Index.html -->
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubhanshu</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:wght@100;@200;@300;@400;@500;@600;@700;@800;@900&display=swap">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-
-    <section class="hero">
-        <div class="main-width">
-            <header>
-                <div class="logo">
-                    <a href="index.html"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></a>
-                </div>
-
-                <nav>
-                    <div class="hamb">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <ul class="nav-list">
-                        <li><a href="photo.html" target="_blank">Photo Gallery</a></li>
-                        <li><a href="song.html" target="_blank">Song Gallery</a></li>
-                        <!-- <li class="btn"><a href="Contacts.html">Contact Me</a></li> -->
-                    </ul>
-                </nav>
-            </header>
-
-            <div class="container">
-                <div class="hero-text">
-                    <h3>Hi, There!</h3>
-                    <h1>I am <span class="input">Shubhanshu.</span></h1>
-                    <p>Every decision for Something is a decision against Something else.</p>
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/shubhanshu-maurya-45a561239/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/@thepseudoirony9527" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/shubh.shubh22/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <img src="Images/play.png" id="icon">
-                    </div>
-                    <a href="About.html" target="_blank"><button type="button">More About Me</button></a>
-                    <a href="Contacts.html" target="_blank"><button type="button">Contact Me</button></a>
-                </div>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4VfGiUP0GeVNHO5trSyx8m?utm_source=generator&amp;theme=0" width="100%" height="80" frameborder="0" allowfullscreen="true" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <div class="bottom">
-                    <p>© 2026 Shubhanshu - All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-        <audio id="mySong" loop>
-            <source src="sound/music.mp3" type="audio/mp3">
-        </audio>
-    </section>
-
-    <!-- <script type="text/javascript" src="shh.js"></script> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".input", {
-            strings:["Shubhanshu.","Web Developer.","Photographer","Programmer","UI designer","Shubhanshu"],
-            typeSpeed: 70,
-            backSpeed: 60
-        })
-    </script>
-    <script>
-        var mySong = document.getElementById("mySong");
-        var icon = document.getElementById("icon");
-
-        icon.onclick = function(){
-            if(mySong.paused){
-                mySong.play();
-                icon.src = "Images/pause.png";
-            }else{
-                mySong.pause();
-                icon.src = "Images/play.png";
-            }
-        }
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>darkeii — portfolio</title>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
