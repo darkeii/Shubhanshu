@@ -1,0 +1,154 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(110deg, #0f1829, #050812);
+}
+
+.logo{
+    margin-top: -40px;
+    margin-left: -1300px;
+    width: 350px;
+    opacity: 100%;
+    cursor: pointer;
+    transition: opacity 1s;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.logo:hover{
+    opacity: 30%;
+}
+
+.bigcontainer{
+    width: 100%;
+    height: 95vh;
+    max-width: 1600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+video{
+    opacity: 80%;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    z-index: -1;
+}
+
+section{
+    margin-top: -50px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 0 0 5px whitesmoke;
+}
+
+section h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 7px;
+}
+
+section h1{
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+}
+
+section h1::after{
+    content: '';
+    width: 0%;
+    height: 0.2rem;
+    position: absolute;
+    bottom: -0.35rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 0, 43, 0.72);
+    transition: width 1s;
+}
+
+section h1:hover::after{
+    width: 80%;
+    background-color: #fff;
+}
+
+section p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 15px 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+
+section .text{
+    margin: 30px ;
+}
+
+section img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+
+section .text span{
+    font-weight: 800;
+}
+
+.n{
+    margin-right: -102px;
+}
+
+.m{
+    margin-left: -102px;
+    opacity: 0%;
+    transition: opacity 1s;
+}
+
+section .img:hover .m{
+    opacity: 100%;
+}
+
+@media(max-width: 991px)
+{
+    html{
+        font-size: 80%;
+    }
+    .logo{
+        border-color: rgba(0, 0, 0, 0);
+        margin: 0;
+    }
+}
+

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: linear-gradient(rgb(0, 0, 0) , rgb(70, 70, 70) , rgba(7, 7, 7, 0.972));
+  background-size: cover;
+  background-position: center;
+}
+
+.logo{
+  margin-top: -50px;
+  width: 350px;
+  opacity: 100%;
+  cursor: pointer;
+  transition: opacity 1s;
+}
+
+.logo:hover{
+  opacity: 30%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+  width: 30%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  color: aliceblue;
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 4px solid rgb(255, 255, 255);
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+}
+.container .box{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 99.85%;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+  z-index: 1;
+  box-shadow: 0 0 100px rgb(0, 0, 0);
+  opacity: 80%;
+  transition: opacity width 0.5s;
+}
+
+.container .box .dream img:hover{
+  opacity: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px){
+  .container .heading{
+    width: 40%;
+  }
+  .container .heading h3{
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 769px){
+  .container .box{
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .container .box .dream{
+    width: 100%;
+  }
+
+  .container .heading h3{
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 643px){
+  .container .box{
+    width: 90%;
+  }
+  .container .heading{
+    width: 50%;
+  }
+  .container .heading h3{
+    font-size: 2em;
+  }
+}
